@@ -1,0 +1,70 @@
+.bieumau {
+    background: #ffffff;
+    padding: 25px 30px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 10px;
+  }
+  
+  .bieumau label {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .bieumau input[type="text"],
+  .bieumau input[type="password"],
+  .bieumau input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .bieumau input[type="radio"],
+  .bieumau input[type="checkbox"] {
+    margin-right: 5px;
+    margin-top: 8px;
+  }
+  
+  .bieumau button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .bieumau button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .bieumau button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .bieumau button:hover {
+    opacity: 0.85;
+  }
+  
+  .select_tinh{
+    margin-right: 10px;
+    margin-top: 8px;
+  }
+  
+  
+  .body_form {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

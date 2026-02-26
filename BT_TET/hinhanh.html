@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hình ảnh & Video - Tết Kiên Lương</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Bổ sung một chút CSS riêng cho trang gallery nếu cần */
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+      .gallery-item img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.5s;
+      }
+      .gallery-item:hover img {
+        transform: scale(1.1);
+      }
+      .gallery-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(211, 47, 47, 0.8); /* Màu đỏ chủ đạo */
+        color: white;
+        padding: 15px;
+        transform: translateY(100%);
+        transition: transform 0.3s;
+        text-align: center;
+      }
+      .gallery-item:hover .gallery-overlay {
+        transform: translateY(0);
+      }
+      .video-container {
+        background: #000;
+        border-radius: 15px;
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin-bottom: 20px;
+        box-shadow: var(--shadow);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Menu điều hướng -->
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo">🧧 Kiên Lương Xuân</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href="phongtuc.html">Phong tục</a></li>
+          <li><a href="amthuc.html">Ẩm thực</a></li>
+          <li><a href="vanhoa.html">Văn hóa</a></li>
+          <li>
+            <a href="hinhanh.html" style="color: var(--gold)"
+              >Hình ảnh & Video</a
+            >
+          </li>
+          <li><a href="lienhe.html">Liên hệ</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="Banner_1">
+      <h1>KHOẢNH KHẮC NGÀY XUÂN</h1>
+      <p>Lưu giữ những kỷ niệm đẹp nhất tại quê hương Kiên Lương</p>
+    </header>
+
+    <main class="container">
+      <!-- Phần Album Ảnh -->
+      <section>
+        <h2 class="section-title">Album Ảnh Tết</h2>
+        <div class="grid">
+          <!-- Ảnh 1 -->
+          <div class="gallery-item">
+            <div
+              style="
+                background-color: #ccc;
+                height: 250px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img src="./img/chohoa2.jpg" alt="" />
+            </div>
+            <div class="gallery-overlay">
+              <h4>Chợ hoa xuân</h4>
+              <p>Rực rỡ sắc màu bên dòng kênh</p>
+            </div>
+          </div>
+          <!-- Ảnh 2 -->
+          <div class="gallery-item">
+            <div
+              style="
+                background-color: #999;
+                height: 250px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img src="./img/duonglang.jpg" alt="" />
+            </div>
+            <div class="gallery-overlay">
+              <h4>
+                Đường quê thanh bình đón chào năm mới với chút se lạnh của mùa
+                xuân đến
+              </h4>
+            </div>
+          </div>
+          <!-- Ảnh 3 -->
+          <div class="gallery-item">
+            <div
+              style="
+                background-color: #888;
+                height: 250px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img src="./img/amthuc/banhkeotet.jpg" alt="" />
+            </div>
+            <div class="gallery-overlay">
+              <h4>Bánh kẹo ngày tết</h4>
+              <p>Một chút ngọt ngào không kém phần "ngán"</p>
+            </div>
+          </div>
+          <!-- Ảnh 4 -->
+          <div class="gallery-item">
+            <div
+              style="
+                background-color: #777;
+                height: 250px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img src="./img/giadinh.jpg" alt="" />
+            </div>
+            <div class="gallery-overlay">
+              <h4>Ảnh chụp gia đình</h4>
+              <p>Sum vầy sau một năm vất vả</p>
+            </div>
+          </div>
+          <!-- Ảnh 5 -->
+          <div class="gallery-item">
+            <div
+              style="
+                background-color: #777;
+                height: 250px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img src="./img/vanhoa/nhaujpg.jpg" alt="" />
+            </div>
+          </div>
+          <!-- Ảnh 6 -->
+          <div class="gallery-item">
+            <div
+              style="
+                background-color: #777;
+                height: 250px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img src="./img/vanhoa/nhau2.jpg" alt="" />
+            </div>
+          </div>
+          <!-- Ảnh 7 -->
+          <div class="gallery-item">
+            <div
+              style="
+                background-color: #777;
+                height: 250px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img src="./img/ghethuyen.jpg" alt="" />
+            </div>
+            <div class="gallery-overlay">
+              <h4>Ảnh chụp đoàn thuyền neo đậu</h4>
+              <p>Những con người của biển cả trở về sum hộp cùng gia đình</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Phần Video -->
+      <section>
+        <h2 class="section-title">Video</h2>
+
+        <div class="video-wrapper">
+          <video controls>
+            <source
+              src="./img/6225ae51-c144-4f46-8d3a-5f0aa80971b8.mp4"
+              type="video/mp4"
+            />
+            Trình duyệt không hỗ trợ video.
+          </video>
+
+          <h3>Pháo hoa rực rỡ</h3>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Website Tết Kiên Lương - Góc lưu giữ ký ức</p>
+    </footer>
+  </body>
+</html>

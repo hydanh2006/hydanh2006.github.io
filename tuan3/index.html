@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biểu mẫu</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="body_form">
+    <section class="bieumau">
+
+      <form action="https://tranvanhung.fitstu.net/huit/thiet-ke-web/form.php" method="post" enctype="multipart/form-data">
+        <label>Họ tên:</label><br />
+        <input type="text" name="hoten" />
+        <br />
+        <label>Mật khẩu:</label><br />
+        <input type="password" name="matkhau" id="pwd" />
+        <input
+        type="checkbox"
+        onclick="pwd.type=this.checked ? 'text' :'Password'"
+      /> <label>Hiện mật khẩu</label><br>
+
+        <label>Giới tính:</label><br>
+        <input type="radio" name="gioitinh" checked value="1">Nam
+        <input type="radio" name="gioitinh" value="0">Nữ<br> 
+        <label>Tỉnh thành:</label>
+        <select name="tinhthanh" class="select_tinh">
+          <option value="HCM">HCM</option>
+          <option value="An Giang">An Giang</option>
+          <option value="36">Thanh Hóa</option>
+        </select>
+        <br>
+        <label>Sở thích:</label><br>
+        <input type="checkbox" name="sothich1" value="Games">Games<input type="checkbox" name="sothich2" value="Thể thao">Thể thao <br><input type="checkbox" name="sothich3" value="Đọc sách">Đọc sách<input type="checkbox" name="sothich4" value="Âm nhạc">Âm nhạc <br>
+
+        <label>Lớp:</label>
+        <input type="text" placeholder="VD: 15DHTH01" name="" id=""><br>
+
+        <label>Ảnh đại diện:</label><br>
+        <input type="file" name="avatar" id="avatar" accept="image/*"><br> <br>
+        <button type="submit">Gửi</button>
+        <button type="reset">Xóa</button>
+        </input>
+      </form>
+    </section>
+    <section>
+      <a href="layout.html">layout</a>
+    </section>
+  </body>
+</html>
