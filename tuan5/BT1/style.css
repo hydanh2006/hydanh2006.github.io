@@ -1,0 +1,72 @@
+/* Cấu trúc chung cho toàn trang */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.exercise-title {
+  margin-bottom: 30px;
+}
+
+/* Khối tin nhắn (Màu vàng nhạt) */
+.message-card {
+  border: 2px solid #5b79ff;
+  background-color: #ffffd1;
+  padding: 40px 60px;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title-brown {
+  color: #a52a2a;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.content-text-justify {
+  color: #333;
+  font-size: 17px;
+  margin: 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Khối bài học (Có ảnh nền) */
+.lesson-card {
+  border: 6px solid #2e3b8b;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 60px 30px;
+  text-align: center;
+  position: relative;
+  /* Hiệu ứng lớp phủ màu tối để chữ nổi bật hơn */
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&q=80&w=1000");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.title-yellow {
+  color: #ffff00;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.content-text-center {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+}

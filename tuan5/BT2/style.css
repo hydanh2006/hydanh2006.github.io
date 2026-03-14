@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+.header {
+  background-color: #666;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+.navigation {
+  width: 30%;
+  height: 300px;
+  background-color: #f1f1f1;
+  float: left;
+  padding: 20px;
+}
+
+.article {
+  width: 70%;
+  height: 300px;
+  background-color: #ffffff;
+  float: left;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+}
+
+.footer {
+  clear: both;
+  background-color: #666;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}

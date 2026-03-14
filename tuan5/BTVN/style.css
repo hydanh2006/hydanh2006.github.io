@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+/* Khung trang giới hạn 1000px và canh giữa màn hình */
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 40px;
+  background-color: #f8f9fa;
+}
+
+.banner {
+  background-color: #ccffff;
+  padding: 30px 10px;
+  font-weight: bold;
+}
+
+.navigation {
+  background-color: #a3d1c6;
+  padding: 20px 10px;
+  font-weight: bold;
+}
+
+/* Bắt đầu phần dùng Float chia cột */
+.sidebar-left {
+  float: left;
+  width: 25%;
+  height: 300px;
+  background-color: #b3b3b3;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.content {
+  float: left;
+  width: 50%;
+  height: 300px;
+  background-color: #cccccc;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.sidebar-right {
+  float: left;
+  width: 25%;
+  height: 300px;
+  background-color: #e6e6e6;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Sử dụng Clear để ngắt mảng float ở trên */
+.footer {
+  clear: both;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
