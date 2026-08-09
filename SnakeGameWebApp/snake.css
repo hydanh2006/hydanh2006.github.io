@@ -1,0 +1,10 @@
+.container {
+  font-family: "Courier New", Courier, monospace;
+  display: grid;
+  place-items: center;
+}
+
+.blockimgR {
+  display: grid;
+  place-items: end;
+}
